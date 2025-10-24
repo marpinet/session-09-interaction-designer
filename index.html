@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mariana Andrade — Interactive Designer · Founder, Marabunta Creative Agency</title>
+  <meta name="description" content="Portfolio of Mariana Andrade — founder & creative director at Marabunta Creative Agency. Interactive design, creative direction and product experiences." />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+          <circle cx="50" cy="50" r="48" fill="#0b6f5b" />
+          <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="40" fill="#fff">M</text>
+        </svg>
+        <span class="brand-text">Mariana Andrade</span>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Selected Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.marabunta.work" target="_blank" rel="noopener">Marabunta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Mariana Andrade</h1>
+        <p class="lead">Interactive Designer — Founder &amp; Creative Director at <a href="https://www.marabunta.work" target="_blank" rel="noopener">Marabunta Creative Agency</a>.</p>
+        <p>I design product experiences, interactive installations and brand-led digital work — blending research, playful systems and human-centred craft.</p>
+        <p><a class="cta" href="#work">See selected work</a> <a class="cta secondary" href="#contact">Work with me</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm Mariana, an interactive designer with experience leading creative teams, building cross-disciplinary projects and shaping experiences that connect brands and people. I founded <a href="https://www.marabunta.work" target="_blank" rel="noopener">Marabunta Creative Agency</a>, where I serve as Creative Director and help clients translate ideas into immersive digital products and campaigns.</p>
+          <p>My practice mixes product thinking, visual design and interactive prototyping. I focus on clarity, delight and measurable impact.</p>
+          <ul>
+            <li><strong>Role:</strong> Founder &amp; Creative Director</li>
+            <li><strong>Specialties:</strong> Interactive design, prototyping, creative direction, UX strategy, motion and installation design</li>
+            <li><strong>Location:</strong> Remote / based in Portugal</li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <!-- simple illustrative SVG -->
+          <svg viewBox="0 0 600 400" class="portrait" role="img" aria-label="Illustration representing Mariana's creative work">
+            <rect x="0" y="0" width="600" height="400" fill="#f3f7f6" rx="12" />
+            <circle cx="120" cy="120" r="64" fill="#0b6f5b" />
+            <rect x="220" y="40" width="320" height="140" rx="8" fill="#fff" stroke="#e6efec" />
+            <rect x="220" y="210" width="320" height="120" rx="8" fill="#fff" stroke="#e6efec" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="container work">
+      <h2>Selected Work</h2>
+      <p class="muted">A curated selection of studio projects and collaborations. Click any card to see a short description.</p>
+
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0" data-title="Interactive Exhibition — Urban Echoes" data-description="Led creative direction and interaction design for a multisensory exhibition combining motion tracking, generative visuals and responsive sound for 50k+ visitors.">
+          <div class="project-media">
+            <svg viewBox="0 0 400 240" class="project-thumb" role="img" aria-label="Project thumbnail">
+              <rect width="400" height="240" fill="#0b6f5b" rx="6" />
+              <text x="50%" y="55%" font-size="32" fill="#fff" text-anchor="middle">Urban Echoes</text>
+            </svg>
+          </div>
+          <h3>Urban Echoes</h3>
+          <p class="summary">Exhibition — generative visuals & interactive sound</p>
+        </article>
+
+        <article class="project-card" tabindex="0" data-title="Brand Experience — Bloom Festival" data-description="Concept and interactive installations for Bloom Festival — responsive projections and mobile-triggered experiences to connect audiences with live performances.">
+          <div class="project-media">
+            <svg viewBox="0 0 400 240" class="project-thumb" role="img" aria-label="Project thumbnail">
+              <rect width="400" height="240" fill="#ff6b6b" rx="6" />
+              <text x="50%" y="55%" font-size="28" fill="#fff" text-anchor="middle">Bloom Festival</text>
+            </svg>
+          </div>
+          <h3>Bloom Festival</h3>
+          <p class="summary">Brand experience & interactive installations</p>
+        </article>
+
+        <article class="project-card" tabindex="0" data-title="Product Design — FlowDash" data-description="End-to-end design for FlowDash, a collaborative tool — research, prototyping, and production-ready UI focused on live collaboration and motion-driven affordances.">
+          <div class="project-media">
+            <svg viewBox="0 0 400 240" class="project-thumb" role="img" aria-label="Project thumbnail">
+              <rect width="400" height="240" fill="#4d72ff" rx="6" />
+              <text x="50%" y="55%" font-size="28" fill="#fff" text-anchor="middle">FlowDash</text>
+            </svg>
+          </div>
+          <h3>FlowDash</h3>
+          <p class="summary">Product design & prototyping</p>
+        </article>
+      </div>
+
+      <div id="project-modal" class="modal" hidden>
+        <div class="modal-inner">
+          <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+          <h3 id="modal-title"></h3>
+          <p id="modal-desc"></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Creative Direction</h4>
+          <p>Concept development, team leadership, and creative strategy for cross-platform campaigns.</p>
+        </div>
+        <div class="service">
+          <h4>Interactive Design</h4>
+          <p>Prototyping, motion systems, and responsive experiences for web and physical spaces.</p>
+        </div>
+        <div class="service">
+          <h4>Product Design</h4>
+          <p>UX research, design systems and production-ready interfaces focused on clarity and delight.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Interested in working together? Email me at <a href="mailto:hello@mariana.design">hello@mariana.design</a> or use the link below.</p>
+      <p><a class="cta" href="mailto:hello@mariana.design">Get in touch</a></p>
+      <p class="muted">Marabunta Creative Agency — <a href="https://www.marabunta.work" target="_blank" rel="noopener">marabunta.work</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mariana Andrade — Founder, Marabunta Creative Agency</p>
+      <p class="socials"><a href="https://www.marabunta.work" target="_blank" rel="noopener">Marabunta</a> · <a href="#contact">Email</a> · <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
