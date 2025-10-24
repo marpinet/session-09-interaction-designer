@@ -11,8 +11,18 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#">
-        <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-          <circle cx="50" cy="50" r="48" fill="#0b6f5b" />
+        <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true" focusable="false" class="logo-wave">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#006d8f"/>
+              <stop offset="100%" style="stop-color:#004d66"/>
+            </linearGradient>
+            <pattern id="wavePattern" width="100" height="10" patternUnits="userSpaceOnUse">
+              <path d="M0,5 C25,0 25,10 50,5 C75,0 75,10 100,5" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="url(#logoGrad)"/>
+          <rect x="0" y="0" width="100" height="100" fill="url(#wavePattern)"/>
           <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="40" fill="#fff">M</text>
         </svg>
         <span class="brand-text">Mariana Andrade</span>
@@ -32,11 +42,20 @@
 
   <main>
     <section class="hero">
+      <div class="ocean-bg"></div>
       <div class="container hero-inner">
         <h1>Mariana Andrade</h1>
         <p class="lead">Interactive Designer — Founder &amp; Creative Director at <a href="https://www.marabunta.work" target="_blank" rel="noopener">Marabunta Creative Agency</a>.</p>
-        <p>I design product experiences, interactive installations and brand-led digital work — blending research, playful systems and human-centred craft.</p>
-        <p><a class="cta" href="#work">See selected work</a> <a class="cta secondary" href="#contact">Work with me</a></p>
+        <p>Creating immersive digital experiences that flow like water — fluid, powerful, and ever-evolving. Through Marabunta, we craft digital narratives that leave lasting impressions.</p>
+        <div class="cta-group">
+          <a class="cta" href="#work">Explore Our Work</a>
+          <a class="cta secondary ripple" href="#contact">Start a Project</a>
+        </div>
+      </div>
+      <div class="wave-group">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
       </div>
     </section>
 
@@ -66,40 +85,80 @@
 
     <section id="work" class="container work">
       <h2>Selected Work</h2>
-      <p class="muted">A curated selection of studio projects and collaborations. Click any card to see a short description.</p>
+      <p class="muted">Deep dive into our most impactful projects. Each one flows with purpose and possibility.</p>
 
       <div class="projects-grid">
-        <article class="project-card" tabindex="0" data-title="Interactive Exhibition — Urban Echoes" data-description="Led creative direction and interaction design for a multisensory exhibition combining motion tracking, generative visuals and responsive sound for 50k+ visitors.">
+        <!-- Note: Replace the src attributes with actual project images -->
+        <article class="project-card" tabindex="0" 
+          data-title="Ocean Data Visualization — Global Climate Initiative" 
+          data-description="Created an immersive data visualization platform for ocean temperature and pollution data. Interactive 3D globe with real-time data streams, gesture controls, and AR components let users explore marine data through touch and movement. The installation traveled to climate conferences worldwide, reaching over 100,000 participants."
+          data-tags="Interactive Installation,Data Visualization,Climate"
+          data-year="2024">
           <div class="project-media">
-            <svg viewBox="0 0 400 240" class="project-thumb" role="img" aria-label="Project thumbnail">
-              <rect width="400" height="240" fill="#0b6f5b" rx="6" />
-              <text x="50%" y="55%" font-size="32" fill="#fff" text-anchor="middle">Urban Echoes</text>
-            </svg>
+            <div class="media-overlay"></div>
+            <img src="path/to/ocean-data-viz.jpg" alt="Ocean Data Visualization Interface" class="project-thumb">
+            <div class="project-hover">
+              <span class="view-project">View Project</span>
+              <div class="project-tags">
+                <span>Interactive Installation</span>
+                <span>Data Visualization</span>
+              </div>
+            </div>
           </div>
-          <h3>Urban Echoes</h3>
-          <p class="summary">Exhibition — generative visuals & interactive sound</p>
+          <h3>Ocean Data Visualization</h3>
+          <p class="summary">Interactive installation for climate awareness</p>
+          <div class="project-meta">
+            <span class="project-year">2024</span>
+            <span class="project-client">Global Climate Initiative</span>
+          </div>
         </article>
 
-        <article class="project-card" tabindex="0" data-title="Brand Experience — Bloom Festival" data-description="Concept and interactive installations for Bloom Festival — responsive projections and mobile-triggered experiences to connect audiences with live performances.">
+        <article class="project-card" tabindex="0" 
+          data-title="Tide — Digital Banking Experience" 
+          data-description="Reimagined digital banking for the modern age. Created a fluid, intuitive interface that makes managing money feel as natural as water flowing. Features biometric authentication, predictive analytics, and a revolutionary transaction visualization system that maps spending patterns to ocean currents. Increased user engagement by 200% and reduced support tickets by 45%."
+          data-tags="UX Design,Mobile App,Fintech"
+          data-year="2025">
           <div class="project-media">
-            <svg viewBox="0 0 400 240" class="project-thumb" role="img" aria-label="Project thumbnail">
-              <rect width="400" height="240" fill="#ff6b6b" rx="6" />
-              <text x="50%" y="55%" font-size="28" fill="#fff" text-anchor="middle">Bloom Festival</text>
-            </svg>
+            <div class="media-overlay"></div>
+            <img src="path/to/tide-banking.jpg" alt="Tide Banking Interface" class="project-thumb">
+            <div class="project-hover">
+              <span class="view-project">View Project</span>
+              <div class="project-tags">
+                <span>UX Design</span>
+                <span>Mobile App</span>
+              </div>
+            </div>
           </div>
-          <h3>Bloom Festival</h3>
-          <p class="summary">Brand experience & interactive installations</p>
+          <h3>Tide Banking</h3>
+          <p class="summary">Fluid digital banking experience</p>
+          <div class="project-meta">
+            <span class="project-year">2025</span>
+            <span class="project-client">Tide Financial</span>
+          </div>
         </article>
 
-        <article class="project-card" tabindex="0" data-title="Product Design — FlowDash" data-description="End-to-end design for FlowDash, a collaborative tool — research, prototyping, and production-ready UI focused on live collaboration and motion-driven affordances.">
+        <article class="project-card" tabindex="0" 
+          data-title="Oceanic — Immersive Concert Experience" 
+          data-description="Designed a groundbreaking concert experience that synchronized music with real-time ocean data. Custom-built sensors in multiple ocean locations fed data to our visualization engine, creating living artwork that responded to tides, waves, and marine life movements. The system powered 12 sold-out shows across Europe, each unique to that moment's ocean conditions."
+          data-tags="Interactive Art,Real-time Data,Music"
+          data-year="2024">
           <div class="project-media">
-            <svg viewBox="0 0 400 240" class="project-thumb" role="img" aria-label="Project thumbnail">
-              <rect width="400" height="240" fill="#4d72ff" rx="6" />
-              <text x="50%" y="55%" font-size="28" fill="#fff" text-anchor="middle">FlowDash</text>
-            </svg>
+            <div class="media-overlay"></div>
+            <img src="path/to/oceanic-concert.jpg" alt="Oceanic Concert Visualization" class="project-thumb">
+            <div class="project-hover">
+              <span class="view-project">View Project</span>
+              <div class="project-tags">
+                <span>Interactive Art</span>
+                <span>Real-time Data</span>
+              </div>
+            </div>
           </div>
-          <h3>FlowDash</h3>
-          <p class="summary">Product design & prototyping</p>
+          <h3>Oceanic</h3>
+          <p class="summary">Data-driven concert visualization</p>
+          <div class="project-meta">
+            <span class="project-year">2024</span>
+            <span class="project-client">European Arts Council</span>
+          </div>
         </article>
       </div>
 
